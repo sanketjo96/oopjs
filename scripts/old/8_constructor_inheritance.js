@@ -3,7 +3,7 @@
  * 
  */
 
-function Rectangle() {
+function Rectangle(length, width) {
     this.length = length;
     this.width = width;
 }
@@ -31,8 +31,12 @@ Square.prototype.toString = function () {
 const rect = new Rectangle(5, 10);
 const squ = new Square(6)
 
-console.log(rect)
-console.log(squ)
+console.log(rect.getArea())
+console.log(rect.toString())
+
+console.log(squ.getArea())
+console.log(squ.toString())
+
 
 // What will be output here ?
-console.log(squ instanceof Square)
+// console.log(squ instanceof Square)

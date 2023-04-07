@@ -5,6 +5,9 @@
 
 function Person(name) {
     this.name = name
+    this.sayName = function() {
+        return this.name + 'from instance'; 
+    }
 }
 
 Person.prototype.sayName = function () {
@@ -14,7 +17,7 @@ Person.prototype.sayName = function () {
 const e2 = new Person('Suresh')
 
 // Lets check the reality. 
-console.log(e1.sayName());
+console.log(e2.sayName());
 
 
 // @@Look at memChart
