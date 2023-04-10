@@ -4,7 +4,7 @@
  * Note how we can provide controlled access to data
 */
 function Son(name) {
-    Object.defineProperties(this, "name", {
+    Object.defineProperty(this, "name", {
         get: function() {
             // verify user
             console.log('get: lets check user') 
