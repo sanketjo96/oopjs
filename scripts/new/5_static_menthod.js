@@ -26,6 +26,8 @@ class Task {
 }
 
 const t1 = new Task(12);
+console.log(t1);
+
 const t2 = Task.getClone(t1)
 console.log(t2)
 

@@ -8,6 +8,7 @@ class Task {
 }
 
 Task.osName = "windows";
-let task = new Task();
+let task = new Task(134);
 
+console.log(Task.osName)
 console.log(task.osName) // ?? what is OP

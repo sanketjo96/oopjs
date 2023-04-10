@@ -1,18 +1,18 @@
-class Son {
-    constructor(name) {
-        this.name = name;
+class ClassWithGetSet {
+    #msg = "hello world";
+    
+    get msg() {
+        // auth logic
+      return this.#msg;
     }
-
-    get name() {
-        return this.name;
+    set msg(x) {
+                // auth logic
+      this.#msg = `hello ${x}`;
     }
+  }
+  
+const instance = new ClassWithGetSet();
+console.log(instance.msg); // "hello world"
 
-    set name(name) {
-        this.name = name;
-    }
-}
-
-const son = new Son('Prakash')
-console.log(name);
-son.name = 'Arjun';
-console.log(son.name);
+instance.msg = "cake";
+console.log(instance.msg); // "hello cake"
