@@ -6,7 +6,7 @@
 function Person(name) {
     this.name = name
     this.sayName = function() {
-        return this.name + 'from instance'; 
+        return this.name + ' from instance'; 
     }
 }
 

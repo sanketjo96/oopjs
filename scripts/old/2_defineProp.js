@@ -6,9 +6,13 @@
 function Son(name) {
     Object.defineProperties(this, "name", {
         get: function() {
+            // verify user
+            console.log('get: lets check user') 
             return name;
         },
         set: function(newName) {
+            console.log('set: lets check user') 
+            // verify user 
             name = newName
         }
     })
