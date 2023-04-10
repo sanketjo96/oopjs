@@ -23,7 +23,7 @@ function Square(side) {
 }
 
 Square.prototype = new Rectangle();
-// Square.prototype.constructor = Square;
+// Square.constructor = Square;
 Square.prototype.toString = function () {
     return "I am Square"
 }
@@ -40,4 +40,5 @@ console.log(squ.toString())
 
 // What will be output here ?
 console.log(squ instanceof Square)
-// console.log(squ.constructor === Rectangle)
+console.log(squ.constructor === Square)
+console.log(Square.prototype.__proto__ === Rectangle.prototype)
